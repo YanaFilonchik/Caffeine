@@ -1,0 +1,34 @@
+@mixin button($width: 134px, $height: 48px, $border-radius:24px) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background-color: #F9C06A;
+    box-shadow: 0px 6px 12px 0px #F9C06A38;
+    border-width: 0;
+    font: 700 16px Playfair Display;
+    color: #1E1E1E;
+}
+
+@mixin slider-flex-background($gap-px, $color-background: transparent, $position-content: center) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-px;
+    align-items: $position-content;
+    background-color: $color-background;
+    justify-content: center;
+}
+
+@mixin border($border-width: 0, $border-color: transparent) {
+    border: $border-width solid $border-color
+}
+
+@mixin text-p($color, $width, $size, $style: Playfair Display) {
+    font: $width $size $style;
+    color: $color;
+}
+
+@mixin flex-row-between($align-items: start) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: space-between;
+}
